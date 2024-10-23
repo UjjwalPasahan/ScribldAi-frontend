@@ -89,7 +89,7 @@ const Home = () => {
     const canvas = canvasRef.current;
   
     if (canvas) {
-      const response = await axios.post('http://localhost:3000/calculate', {
+      const response = await axios.post('https://scribld-ai-backend.vercel.app/?vercelToolbarCode=Le8E93VB7MiYuxp/calculate', {
         image: canvas.toDataURL('image/png').split(',')[1],
         dictOfVars: dictOfVars || {},
       });
